@@ -1,0 +1,219 @@
+
+
+body, *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'popins', sans-serif;
+}
+
+header{
+    position:fixed;
+    background-color: #0062ff; 
+    padding:10px;
+    width: 100%; /* pour occuper toute sa largeur*/
+    z-index:5; /*permet de faire passer le header au dessus de tout le reste lors de la navigation*/
+    text-align: center;
+    margin-top:-10px;
+}
+header h1{
+    text-transform: uppercase;
+    font-size:2.6rem;
+    font-weight:900;
+    border:solid 5px #fff;
+    color:#fff;
+    /* background-color: #0062ff; */
+    display:inline-block;
+    padding: 2px 15px; /*pour creer du vide a l'intrieur*/
+    border-radius:32px;
+    
+
+}
+.welcome{
+    max-width: 100%; /*pour aligner mes elemnts comme je desire*/
+    width:1200px; /*largeur pour desktop*/
+    position: relative;
+    /* background-color:darkslateblue; pour bien visualiser l'evolution de  mon bloc "welcome" */
+    margin: 10px auto; /*espacement externe du bloc 10px en haut et bas, la gauche et la droite sont automatiques (le bloc sera centré) */
+    height:550px; /*pour eviter l'image de profil de cacher les blocs du bas lorqu'elle sera en position absolute */
+}
+
+/* deplacer l'image du bloc "welcome" et la modifiée */
+.welcome img{
+    position: absolute; 
+    top:28%;
+    left:58%;
+    width: 300px;
+    border-radius: 50%;
+    background-color:darkgray;
+    border-top-right-radius:0; /* creer un angle droit au nivau de bordure*/
+}
+
+/*traitonns le heading 2*/
+.welcome h2{
+    font-size: 2.57rem;
+    text-transform: uppercase;
+    position:absolute;
+    left:3%;
+    top:40%;
+    color: #333;
+}
+.welcome h2 span{
+    font-weight: bold;
+    color:#0062ff;
+}
+
+nav{
+    position:sticky;
+    top:92px;
+    margin:25px auto;
+    background-color: darkgrey;
+    z-index: 15;
+
+}
+nav ul{
+    display:flex; /*pour mettre la nav horizontalement*/
+    justify-content:space-evenly;
+    list-style-type: none;
+    padding:10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size:1.5rem;
+    text-transform: lowercase;
+    color:#222;
+}
+
+/* main content style */
+
+main.main-content{
+    width:100%;
+    max-width: 1000px;
+    margin: 75px auto;
+}
+
+section h2{
+    margin-top:3rem;
+    margin-bottom:1rem;
+    font-size: 1.8rem;
+    color: #0062ff;
+}
+
+section p{
+    font-size: 1.4rem;
+}
+
+.images{
+    display:flex;
+    justify-content: space-between;
+}
+.images li{
+    list-style-type:none;
+    margin-right: 10px;
+}
+.images img{
+    width:500px;
+    border: solid 3px #e2e2e2;
+    border-radius: 1rem;
+}
+
+div.services .row{
+    display:flex;
+    margin-bottom: 2rem;
+    margin-left:50px;
+
+}
+
+div.service-title {
+    display:flex; /*metre l'image cote a cote avec le heading 3 */
+}
+
+.service-title img{
+    width:32px;
+    margin-right:15px;
+}
+
+div.service-title h3{
+    font-size:1.5rem;
+    color:#444;
+    margin-bottom: 1px;
+}
+
+
+.form img{
+    width: 75%;
+}
+
+form{
+    border: solid 2px #ddd;
+    width:60%;
+    padding:25px;
+    background-color: #0062ffaf;
+    border-radius: 2rem;
+}
+
+form input[type="text"], form input[type="email"], form textarea{
+    padding:8px;
+    font-size: 1.2rem;
+    width: 100%;
+    border: solid 2px #ddd;
+    margin: 6px 0;
+}
+
+form input[type="submit"]{
+    font-size:1.4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    border:none;
+    background-color: #fff;
+    color: #0062ff;
+    padding:8px 24px;
+    border-radius: 12rem;
+}
+
+.whatsapp{
+    display: flex;
+    justify-content:center ;
+    justify-items: center;
+}
+
+.whatsapp img.logo{
+    width: 52px;
+    justify-items: center;
+    
+}
+
+.whatsapp span.phone{
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+}
+
+div.form{
+    position: relative;
+}
+div.form form{ /* image "office" */
+    position: absolute;
+    top:20%;
+    left:40%;
+}
+
+footer{
+    width:100%;
+    background-color: #0062ff;
+    color: #fff;
+    margin-top: 50px;
+    
+}
+
+footer p{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p a{
+    text-decoration: none;
+    color: rgb(198,198,198);
+    font-weight: bold;
+}
